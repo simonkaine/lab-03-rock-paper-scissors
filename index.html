@@ -24,18 +24,18 @@
 
             <h2>Rules:</h2>
             <ol>
-                <li>Paper beats rock</li>
-                <li>Rock beats Scissors</li>
-                <li>Scissors beats papers</li>
+                <li>~ Paper beats rock</li>
+                <li>~ Rock beats Scissors</li>
+                <li>~ Scissors beats papers</li>
             </ol>
 
-            <p>PLease choose one of the following choices below, click play to start GOOD LUCK!</p>
+            <p>Please choose one of the following choices below, click play to start. GOOD LUCK!</p>
 
-            <div>
+            <div class="pictures">
                 <label>
-                    <input type='radio' name='game' value='rock'>Rock
+                    <input type='radio' name='game' value='rock'> Rock
                     <img src="assets/rock.png" alt="rock">
-                    <!-- https://helloericg.com/project/rock-paper-scissors-game/ -->
+                    <!-- images used from https://helloericg.com/project/rock-paper-scissors-game/ -->
                 </label>
     
                 <label>
@@ -44,27 +44,29 @@
                 </label>
     
                 <label>
-                    <input type='radio' name='game' value='Scissors'>Scissors
+                    <input type='radio' name='game' value='scissors'>Scissors
                     <img src="assets/scissors.png" alt="scissors">
                 </label>
             </div>
 
 
             <button id='play'>PLAY</button>
-
+           
+            <section class="results-box">
             <div> Wins
                 <span id='total-wins'>0</span>
             </div>
-             <div> Losses
+            <div> Losses
                 <span id='total-losses'>0</span>
-             </div>
+            </div>
             <div> Draws
                 <span id='total-draws'>0</span>
             </div>
-            
+            </section>
+
             <button id="reset-id">Reset</button>
             <span id="resetSpan">0</span>
-
+            
         </section>
     </main>
     <footer>
