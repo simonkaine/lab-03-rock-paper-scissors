@@ -30,25 +30,14 @@ playButton.addEventListener('click', () => {
     if (theWinner === 'win') {
         wins++;
         totalWins.textContent = wins;
-        
-        // console.log('total wins', wins);
     }
     else if (theWinner === 'draw') {
         draws++;
         totalDraws.textContent = draws;
-        
-        // console.log('total draw', draws);
     }
     else {
         losses++;
         totalLosses.textContent = losses;
-        
     } 
-       
-        // console.log('total loss', losses);
-    
-
-    console.log(userChoice);
-    console.log(computerChoice);
 
 });
