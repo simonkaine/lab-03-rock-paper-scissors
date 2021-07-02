@@ -6,11 +6,14 @@ const playButton = document.getElementById('play');
 const totalWins = document.getElementById('total-wins');
 const totalLosses = document.getElementById('total-losses');
 const totalDraws = document.getElementById('total-draws');
+const resetBtn = document.getElementById('reset-id');
+let resetSpan = document.getElementById('resetSpan');
 
 // initialize state
 let wins = 0;
 let losses = 0;
 let draws = 0;
+let resets = 0;
 
 // set event listeners 
   // get user input
@@ -39,5 +42,16 @@ playButton.addEventListener('click', () => {
         losses++;
         totalLosses.textContent = losses;
     } 
-
 });
+
+resetBtn.addEventListener('click', () => {
+    wins = 0;
+    losses = 0;
+    draws = 0;
+    resets++;
+    totalWins.textContent = wins;
+    resetSpan.textContent = resets;
+    totalLosses.textContent = losses;
+    totalDraws.textContent = draws;
+});
+
