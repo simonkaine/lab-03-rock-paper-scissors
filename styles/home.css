@@ -1,1 +1,8 @@
 /* add home page styles here */
+input[type=radio]:checked + img {
+    width: 256px;
+}
+
+img {
+    width: 200px;
+}
